@@ -1,0 +1,345 @@
+@import "normalize.css";
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,600&subset=latin,cyrillic);
+body {
+  color: #444444;
+  background: #fafcfd;
+  font: 14px "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.inner {
+  padding: 0 12px;
+}
+.baseline {
+  margin-bottom: 24px;
+}
+.center-align {
+  margin-left: auto;
+  margin-right: auto;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h6,
+h6,
+th {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+a {
+  color: #00bff3;
+  text-decoration: none;
+}
+a:hover {
+  color: #00bff3;
+}
+:focus {
+  outline: none;
+}
+button {
+  padding: 8px 12px;
+  border: 1px solid #d1d8e0;
+  border-radius: 3px;
+  background: #eceef0;
+}
+button:hover {
+  background: #e4e7e9;
+  border-color: #c8d1da;
+}
+button:active {
+  background: #d3d7dc;
+  border-color: #b5c1cd;
+}
+button.primary {
+  border-color: #48a6d6;
+  background: #5db0db;
+  color: white;
+}
+button.primary:hover {
+  border-color: #339cd2;
+  background: #48a6d6;
+}
+button.primary:active {
+  background: #539edb;
+  color: rgba(255, 255, 255, 0.8);
+}
+table {
+  width: 100%;
+  margin-left: -2px;
+  margin-bottom: 24px;
+  border: 2px solid #fff;
+  border-bottom-color: #dae0e6;
+}
+table th {
+  font-size: 15px;
+  text-align: left;
+  background: #dae0e6;
+}
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #fff;
+}
+table td {
+  background: #f5f6f7;
+}
+form {
+  margin-bottom: 24px;
+}
+form label {
+  display: inline-block;
+  min-width: 150px;
+}
+form input,
+form select {
+  width: 300px;
+  padding: 5px;
+  border: 1px solid #dae0e6;
+  border-radius: 2px;
+}
+form select {
+  width: 312px;
+}
+input[type="file"]::-webkit-file-upload-button {
+  background: #eee;
+  padding: 3px 6px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+header {
+  color: rgba(255, 255, 255, 0.65);
+}
+header .container {
+  overflow: hidden;
+}
+header ul {
+  font-size: 0;
+}
+header ul li {
+  display: inline-block;
+  font-size: 24px;
+}
+header ul li a {
+  display: block;
+  padding: 16px 12px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+}
+header ul li a.active {
+  color: #00bff3;
+  background-color: #2c3e50;
+}
+header #user {
+  float: right;
+  min-width: 165px;
+  font: 14px 'Open Sans';
+  text-transform: capitalize;
+}
+header #user a {
+  color: rgba(255, 255, 255, 0.65);
+  display: inline-block;
+  padding: 16px;
+  height: 20px;
+}
+header #user i {
+  margin-right: 5px;
+}
+header #user #user-dropdown-menu {
+  position: absolute;
+  background: #2e4153;
+  text-align: center;
+}
+header #user #user-dropdown-menu li {
+  display: list-item;
+}
+header #user #user-dropdown-menu a {
+  padding: 11px 12px 12px;
+  font-size: 14px;
+}
+header #user #user-dropdown-menu a:hover {
+  color: #00bff3;
+  background: none;
+}
+header #main-nav {
+  background: #34495e;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+header #main-nav ul {
+  float: left;
+  text-transform: uppercase;
+}
+header #main-nav a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.85);
+}
+header #main-nav a:active {
+  background: #304357;
+}
+header #main-nav a.active:hover {
+  background: #2c3e50;
+  color: #00bff3;
+}
+header #sub-nav {
+  background: #2c3e50;
+}
+header #sub-nav ul {
+  float: left;
+}
+header #sub-nav a {
+  padding: 12px;
+  font-size: 14px;
+}
+header #sub-nav a:hover {
+  color: #00bff3;
+}
+header #date {
+  float: right;
+}
+header #date p {
+  color: rgba(255, 255, 255, 0.25);
+  margin: 12px 16px;
+}
+#content {
+  min-height: 523px;
+  padding: 12px;
+}
+#subjects,
+#marks,
+#info {
+  background: #white;
+}
+#subjects h2,
+#marks h2,
+#info h2 {
+  margin: 0;
+  padding: 12px;
+  font-size: 20px;
+  text-transform: capitalize;
+  background: #dae0e6;
+}
+#subjects,
+#marks {
+  float: left;
+  width: 49.9%;
+  margin-bottom: 24px;
+}
+#subjects li a,
+#marks li a {
+  display: block;
+  padding: 12px;
+  font-size: 16px;
+  color: #444444;
+  background: #f5f6f7;
+  border: 1px solid #eceef0;
+  border-top: none;
+}
+#subjects li a:hover,
+#marks li a:hover {
+  background: #eff1f2;
+}
+#subjects li a.active,
+#marks li a.active {
+  font-weight: 600;
+  color: #636363;
+  background: #f8f9f9;
+  border-right: none;
+}
+#subjects li a.active span,
+#marks li a.active span {
+  display: none;
+}
+#subjects li a span,
+#marks li a span {
+  display: inline-block;
+  float: right;
+  text-align: center;
+  min-width: 20px;
+  padding: 4px;
+  margin-top: -4px;
+  color: #fff;
+  background: #f1c40f;
+  border-radius: 2px;
+}
+#subjects li a span.bad,
+#marks li a span.bad {
+  background: #ff3300;
+}
+#subjects li a span.normal,
+#marks li a span.normal {
+  background: #f1c40f;
+}
+#subjects li a span.good,
+#marks li a span.good {
+  background: #99cc33;
+}
+#subjects li a span.excellent,
+#marks li a span.excellent {
+  background: #29cf00;
+}
+#subjects {
+  opacity: .99;
+}
+#subjects h2 {
+  border-right: 1px solid #d1d8e0;
+}
+#marks {
+  margin-left: -1px;
+  border: 1px solid #eceef0;
+  border-top: 0;
+}
+#marks h2 {
+  padding: 12px 24px;
+}
+#marks ul {
+  padding: 0 12px 12px;
+  background: #f8f9f9;
+}
+#marks ul :last-child a {
+  border-bottom: none;
+}
+#marks ul li a {
+  background: #f8f9f9;
+  border-left: none;
+  border-right: none;
+}
+#info div {
+  border: 1px solid #eceef0;
+  border-top: none;
+  padding: 12px;
+}
+footer {
+  margin-top: 24px;
+  padding: 12px;
+  background: #7f8c8d;
+}
+footer ul {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+  padding: 0 12px;
+}
+footer ul li {
+  display: inline-block;
+  margin-right: 8px;
+}
+footer ul li a {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.65);
+}
+footer ul li a:hover {
+  color: rgba(255, 255, 255, 0.85);
+}

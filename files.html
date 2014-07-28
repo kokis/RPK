@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>RPK 2.0</title>
+
+    <link rel="stylesheet" href="css/theme.css"/>
+
+    <style>
+        .tf_active {
+            font-weight: 600;
+        }
+
+        .tf_passive {
+            cursor: pointer;
+            color: #777777;
+            border-bottom: 1px dashed #b0b6bc;
+        }
+
+        .tf_passive:hover {
+            color: #444;
+            border-bottom-color: #81868C;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <nav id="main-nav">
+            <ul class="container">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#" class="active">Дисциплины</a></li>
+                <li><a href="#">Портфолио</a></li>
+                <li><a href="#">Операции</a></li>
+                <li><a href="#">ФГОС-3</a></li>
+                <li><a href="#">Отчеты</a></li>
+            </ul>
+        </nav>
+        <nav id="sub-nav">
+            <ul class="container">
+                <li><a href="#">Регламенты</a></li>
+                <li><a href="#">Инструкции</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Форум</a></li>
+                <li><a href="#">ОРОКС</a></li>
+            </ul>
+        </nav>
+        <div id="user"></div>
+    </header>
+
+    <main id="content" class="container">
+        <div class="inner">
+
+            <div class="center-align"><h1>Загрузка файлов</h1>
+            <form id="ishi_file_upload" name='ishi_file_upload' action="" method="POST" enctype="multipart/form-data">
+                    <p><label>Тип документов</label>
+                            <select id="form_name" onchange='refresh_form()'>
+                                <option value="study" >Учебные ресурсы</option>
+                                <option value="science" >Научные ресурсы</option>
+                                <option value="prikaz" >Приказы</option>
+                                <option value="konferenciya" >Конференция</option>
+                                <option value="portfolio" >Портфолио</option>
+                                <option value="rabobl" selected>Рабочая область</option>
+                                <option value="reglaments" >Регламенты</option>
+                            </select>
+                    </p>
+
+
+                    <p><label for="ishi_file"><span class="toggle_file tf_active">Файл</span> | <span class="toggle_file tf_passive">Ссылка</span></label>
+
+                            <input type='file'  id="ishi_file" name='ishi_file'>
+                    </p>
+
+                    <p><label>Название</label>
+                        <input type='text' name='meta[dc:title]' placeholder="Название">
+                    </p>
+                        <button type="button" id="ishi_submit" onclick='checkValid()' class="primary">Далее</button>
+
+            </form>
+</div>
+            </div>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#" class="active">Дисциплины</a></li>
+                <li><a href="#">Портфолио</a></li>
+                <li><a href="#">Операции</a></li>
+                <li><a href="#">ФГОС-3</a></li>
+                <li><a href="#">Отчеты</a></li>
+            </ul>
+        </nav>
+    </footer>
+</div>
+</body>
+</html>
