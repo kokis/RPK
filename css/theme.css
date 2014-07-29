@@ -174,8 +174,9 @@ header #user #user-dropdown-menu li {
   display: list-item;
 }
 header #user #user-dropdown-menu a {
-  padding: 11px 12px 12px;
+  padding: 8px 12px;
   font-size: 14px;
+  text-transform: capitalize;
 }
 header #user #user-dropdown-menu a:hover {
   color: #00bff3;
