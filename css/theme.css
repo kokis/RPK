@@ -165,6 +165,11 @@ header #user #user-dropdown-menu {
 header #user #user-dropdown-menu li {
   display: list-item;
 }
+header #user #user-dropdown-menu li.divider {
+  padding-top: 1px;
+  margin: 5px 1px 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+}
 header #user #user-dropdown-menu a {
   padding: 11px 12px 12px;
   font-size: 14px;
