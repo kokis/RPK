@@ -168,10 +168,21 @@ header #user span {
 header #user #user-dropdown-menu {
   position: absolute;
   background: #2e4153;
-  text-align: center;
 }
 header #user #user-dropdown-menu li {
   display: list-item;
+  padding: 0 24px;
+}
+header #user #user-dropdown-menu li i {
+  margin-right: 1px;
+}
+header #user #user-dropdown-menu li a.checked {
+  margin-left: -20px;
+}
+header #user #user-dropdown-menu li.divider {
+  padding-top: 1px;
+  margin: 5px 1px 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 header #user #user-dropdown-menu a {
   padding: 8px 12px;

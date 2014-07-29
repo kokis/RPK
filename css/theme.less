@@ -224,10 +224,24 @@ header {
 
       position: absolute;
       background: lighten(@dark-color,1%);
-      text-align: center;
 
       li {
         display: list-item;
+        padding: 0 24px;
+
+        i {
+          margin-right: 1px;
+        }
+
+        a.checked {
+          margin-left: -20px;
+        }
+
+        &.divider {
+          padding-top: 1px;
+          margin: 5px 1px 6px;
+          border-bottom: 1px solid fadeout(@nav-color,50%);
+        }
       }
 
       a {
