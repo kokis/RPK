@@ -4,11 +4,13 @@ $( document ).ready(function() {
     menu.hide();
 
 
+
     user.on('click', function(){
     menu.toggle();
     });
 
     $( window ).load(function() {
         menu.css('width',user.outerWidth());
+        $('#content').css('min-height', window.innerHeight-186+'px');
     });
 });
