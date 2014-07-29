@@ -151,28 +151,43 @@ header #user {
 header #user a {
   color: rgba(255, 255, 255, 0.65);
   display: inline-block;
-  padding: 16px;
+  text-align: right;
+  padding: 12px 16px 20px;
   height: 20px;
 }
 header #user i {
   margin-right: 5px;
 }
+header #user span {
+  display: block;
+  margin-top: -5px;
+  font: 11px 'Roboto Condensed';
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+}
 header #user #user-dropdown-menu {
   position: absolute;
   background: #2e4153;
-  text-align: center;
 }
 header #user #user-dropdown-menu li {
   display: list-item;
+  padding: 0 24px;
+}
+header #user #user-dropdown-menu li i {
+  margin-right: 1px;
+}
+header #user #user-dropdown-menu li a.checked {
+  margin-left: -20px;
 }
 header #user #user-dropdown-menu li.divider {
   padding-top: 1px;
   margin: 5px 1px 6px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 header #user #user-dropdown-menu a {
-  padding: 11px 12px 12px;
+  padding: 8px 12px;
   font-size: 14px;
+  text-transform: capitalize;
 }
 header #user #user-dropdown-menu a:hover {
   color: #00bff3;
