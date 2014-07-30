@@ -32,7 +32,7 @@ body {
 
 .container {
   max-width: 1200px;
-  width: 90%;
+  width: 98%;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -421,25 +421,30 @@ header {
 }
 
 footer {
+  overflow: hidden;
   margin-top: @base;
   padding: 12px;
   background: @footer-color;
+  #contact {
+    float: right;
+    padding: 0 16px;
+  }
   ul {
-    .container;
+    float: left;
     .inner();
 
     li {
       display: inline-block;
       margin-right: 8px;
+    }
+  }
 
-      a {
-        font-size: 13px;
-        color: @nav-color;
+  a {
+    font-size: 13px;
+    color: @nav-color;
 
-        &:hover {
-          color: @nav-color-bright;
-        }
-      }
+    &:hover {
+      color: @nav-color-bright;
     }
   }
 }

@@ -8,7 +8,7 @@ body {
 }
 .container {
   max-width: 1200px;
-  width: 90%;
+  width: 98%;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -341,25 +341,27 @@ header #date p {
   padding: 12px;
 }
 footer {
+  overflow: hidden;
   margin-top: 24px;
   padding: 12px;
   background: #7f8c8d;
 }
+footer #contact {
+  float: right;
+  padding: 0 16px;
+}
 footer ul {
-  max-width: 1200px;
-  width: 90%;
-  margin: 0 auto;
-  padding: 0 15px;
+  float: left;
   padding: 0 12px;
 }
 footer ul li {
   display: inline-block;
   margin-right: 8px;
 }
-footer ul li a {
+footer a {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.65);
 }
-footer ul li a:hover {
+footer a:hover {
   color: rgba(255, 255, 255, 0.85);
 }
